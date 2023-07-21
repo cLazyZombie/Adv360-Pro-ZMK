@@ -1,10 +1,8 @@
 [
-	{
-		"code": "&space_alt",
-		"name": "&space_alt",
-		"params": [
-			"code"
-		],
-		"type": "UD"
-	}
+  {
+    "code": "&space_alt",
+    "name": "&space_alt",
+    "params": [],
+    "type": "UD"
+  }
 ]

@@ -1,0 +1,7 @@
+space_alt: space_alt {
+  compatible = "zmk,behavior-mod-morph";
+  label = "space_alt";
+  #binding-cells = <0>;
+  bindings = <&kp SPACE>, <&kp RCTRL>;
+  mods = <(MOD_LSFT|MOD_RSFT)>;
+};
