@@ -1,0 +1,9 @@
+#define NONE &none
+#define ____ &trans
+#define kp(K) &kp K
+
+#define LAYER(L) L { \
+            bindings = < \
+                L##_MAP \
+            >; \
+        }; 

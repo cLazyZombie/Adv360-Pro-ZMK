@@ -1,7 +1,25 @@
+hm: homerow_mods {
+    compatible = "zmk,behavior-hold-tap";
+    label = "HOMEROW_MODS";
+    #binding-cells = <2>;
+    tapping-term-ms = <200>;
+    quick_tap_ms = <175>;
+    flavor = "tap-preferred";
+    bindings = <&kp>, <&kp>;
+};
+
 space_alt: space_alt {
   compatible = "zmk,behavior-mod-morph";
   label = "space_alt";
   #binding-cells = <0>;
   bindings = <&kp SPACE>, <&kp RALT>;
   mods = <(MOD_LSFT|MOD_RSFT)>;
+};
+
+lshift_capsword: lshift_capsword {
+    compatible = "zmk,behavior-tap-dance";
+    label = "SHIFT CAPS_WORD";
+    #binding-cells = <0>;
+    tapping-term-ms = <200>;
+    bindings = <&kp LSHIFT>, <&caps_word>;
 };
