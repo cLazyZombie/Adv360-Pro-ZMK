@@ -4,6 +4,8 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 
+/* referenced from https://github.com/mierak/Adv360-Pro-ZMK */
+
 #include "preprocessor_macros.dtsi"
 
 #define DEFAULT 0
