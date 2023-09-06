@@ -42,3 +42,11 @@ rshift_capsword: rshift_capsword {
     tapping-term-ms = <200>;
     bindings = <&kp RSHIFT>, <&caps_word>;
 };
+
+del_layer: del_layer {
+    compatible = "zmk,behavior-tap-dance";
+    label = "DEL LAYER";
+    #binding-cells = <0>;
+    tapping-term-ms = <500>;
+    bindings = <&mo SP>, <&kp DEL>;
+};
