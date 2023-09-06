@@ -8,6 +8,16 @@ hm: homerow_mods {
     bindings = <&kp>, <&kp>;
 };
 
+hl: homerow_layers {
+    compatible = "zmk,behavior-hold-tap";
+    label = "HOMEROW_LAYERS";
+    #binding-cells = <2>;
+    tapping-term-ms = <200>;
+    quick_tap_ms = <150>;
+    flavor = "tap-preferred";
+    bindings = <&mo>, <&kp>;
+};
+
 space_alt: space_alt {
   compatible = "zmk,behavior-mod-morph";
   label = "space_alt";
@@ -18,8 +28,16 @@ space_alt: space_alt {
 
 lshift_capsword: lshift_capsword {
     compatible = "zmk,behavior-tap-dance";
-    label = "SHIFT CAPS_WORD";
+    label = "LSHIFT CAPS_WORD";
     #binding-cells = <0>;
     tapping-term-ms = <200>;
     bindings = <&kp LSHIFT>, <&caps_word>;
+};
+
+rshift_capsword: rshift_capsword {
+    compatible = "zmk,behavior-tap-dance";
+    label = "RSHIFT CAPS_WORD";
+    #binding-cells = <0>;
+    tapping-term-ms = <200>;
+    bindings = <&kp RSHIFT>, <&caps_word>;
 };
