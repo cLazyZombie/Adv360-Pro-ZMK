@@ -51,5 +51,5 @@ del_layer: del_layer {
     label = "DEL LAYER";
     #binding-cells = <0>;
     tapping-term-ms = <500>;
-    bindings = <&mo SP>, <&kp DEL>;
+    bindings = <&mo ACT>, <&kp DEL>;
 };
