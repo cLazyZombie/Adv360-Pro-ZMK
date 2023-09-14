@@ -1,0 +1,5 @@
+combo_double_shift {
+  timeout-ms = <130>;
+  key-positions = <46 59>; // 46 = left shift, 59 = right shift
+  bindings = <&kp RALT>;
+};
