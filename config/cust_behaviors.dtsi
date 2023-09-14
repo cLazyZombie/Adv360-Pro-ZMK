@@ -34,16 +34,16 @@ lshift_capsword: lshift_capsword {
     compatible = "zmk,behavior-tap-dance";
     label = "LSHIFT CAPS_WORD";
     #binding-cells = <0>;
-    tapping-term-ms = <300>;
+    tapping-term-ms = <400>;
     bindings = <&kp LSHIFT>, <&caps_word>;
 };
 
-rshift_capsword: rshift_capsword {
+rshift_ralt: rshift_ralt {
     compatible = "zmk,behavior-tap-dance";
     label = "RSHIFT CAPS_WORD";
     #binding-cells = <0>;
-    tapping-term-ms = <300>;
-    bindings = <&kp RSHIFT>, <&caps_word>;
+    tapping-term-ms = <400>;
+    bindings = <&kp RSHIFT>, <&kp RALT>;
 };
 
 del_layer: del_layer {
