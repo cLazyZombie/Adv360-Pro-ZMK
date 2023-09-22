@@ -13,7 +13,7 @@ hl: homerow_layers {
     label = "HOMEROW_LAYERS";
     #binding-cells = <2>;
     tapping-term-ms = <170>;
-    // quick-tap-ms = <100>;
+    quick-tap-ms = <200>;
     // quick_tap_ms = <175>;
     // global-quick-tap;
     // flavor = "balanced";
@@ -46,6 +46,17 @@ rshift_ralt: rshift_ralt {
     bindings = <&kp RSHIFT>, <&kp RALT>;
 };
 
+lt2: layer_tap2 {
+    compatible = "zmk,behavior-hold-tap";
+    label = "LAYER TAP 2";
+    #binding-cells = <2>;
+    tapping-term-ms = <300>;
+    quick-tap-ms = <250>;
+    flavor = "hold-preferred";
+    bindings = <&mo>, <&kp>;
+};
+
+/*
 del_layer: del_layer {
     compatible = "zmk,behavior-tap-dance";
     label = "DEL LAYER";
@@ -53,3 +64,4 @@ del_layer: del_layer {
     tapping-term-ms = <500>;
     bindings = <&mo ACT>, <&kp DEL>;
 };
+*/
