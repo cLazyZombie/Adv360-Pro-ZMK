@@ -30,12 +30,12 @@ space_alt: space_alt {
   mods = <(MOD_LSFT|MOD_RSFT)>;
 };
 
-lshift_capsword: lshift_capsword {
+rshift_capsword: rshift_capsword {
     compatible = "zmk,behavior-tap-dance";
     label = "LSHIFT CAPS_WORD";
     #binding-cells = <0>;
     tapping-term-ms = <400>;
-    bindings = <&kp LSHIFT>, <&caps_word>;
+    bindings = <&kp RSHIFT>, <&caps_word>;
 };
 
 rshift_ralt: rshift_ralt {
