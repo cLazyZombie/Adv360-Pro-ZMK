@@ -61,7 +61,8 @@ mt2: mt2 {
     label = "MODE TAP 2";
     #binding-cells = <2>;
     flavor = "tap-preferred";
-    tapping-term-ms = <160>;
+    #flavor = "balanced";
+    tapping-term-ms = <170>;
     bindings = <&kp>, <&kp>;
 };
 
