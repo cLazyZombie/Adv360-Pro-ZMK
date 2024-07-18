@@ -38,7 +38,7 @@ rshift_capsword: rshift_capsword {
     bindings = <&kp RSHIFT>, <&caps_word>;
 };
 
-rshift_capsword: lshift_capsword {
+lshift_capsword: lshift_capsword {
     compatible = "zmk,behavior-tap-dance";
     label = "LSHIFT CAPS_WORD";
     #binding-cells = <0>;
