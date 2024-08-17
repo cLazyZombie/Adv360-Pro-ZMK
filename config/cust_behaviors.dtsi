@@ -82,3 +82,12 @@ del_layer: del_layer {
     bindings = <&mo ACT>, <&kp DEL>;
 };
 */
+
+// left control + left bracket = ESC
+// just left bracket = left bracket
+br_esc: open_bracket_esc {
+  compatible = "zmk,behavior-mod-morph";
+  #binding-cells = <0>;
+  bindings = <&kp LBKT>, <&kp ESC>;
+  mods = <MOD_LCTL>;
+};
