@@ -5,3 +5,11 @@ combo_double_shift {
   bindings = <&kp RALT>;
 };
 */
+/*
+combo_ctrl_bracket {
+  timeout-ms = <130>;
+  key-positions = <28 73>; // 28 = left ctrl, 73 = open bracket
+  bindings = <&kp ESC>;
+  //slow-release;
+};
+*/
